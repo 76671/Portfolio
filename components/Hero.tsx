@@ -6,8 +6,6 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ setView }) => {
-  const resumeLink = "https://drive.google.com/uc?export=download&id=1mc7rNIJO7zK7OvFKXssF7_2f5588yM-r";
-
   return (
     <section id="home" className="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,14 +28,12 @@ const Hero: React.FC<HeroProps> = ({ setView }) => {
               >
                 View Projects
               </button>
-              <a
-                href={resumeLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setView('profile')}
                 className="px-8 py-3 border-2 border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-all transform hover:-translate-y-1 text-center"
               >
-                Download Resume
-              </a>
+                View Profile
+              </button>
             </div>
           </div>
           

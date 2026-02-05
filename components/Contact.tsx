@@ -2,20 +2,18 @@
 import React from 'react';
 
 const Contact: React.FC = () => {
-  const resumeLink = "https://drive.google.com/uc?export=download&id=1mc7rNIJO7zK7OvFKXssF7_2f5588yM-r";
-
   return (
     <section id="contact" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-16 flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1">
+        <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-16 flex flex-col items-center text-center gap-8">
+          <div className="max-w-2xl">
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Let's Connect</h2>
             <p className="text-slate-600 mb-8 leading-relaxed">
               I'm currently seeking entry-level opportunities in Data Analysis and SQL Development. 
               Feel free to reach out to discuss how I can help your organization with data-driven insights!
             </p>
             
-            <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
               <a 
                 href="mailto:viveksaurav64@gmail.com" 
                 className="flex items-center gap-4 text-slate-700 hover:text-blue-600 transition-colors group"
@@ -42,17 +40,6 @@ const Contact: React.FC = () => {
                 <span className="font-medium">linkedin.com/in/vivek-saurav</span>
               </a>
             </div>
-          </div>
-          
-          <div className="flex-shrink-0">
-             <a 
-                href={resumeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-900 text-white px-10 py-4 rounded-xl font-bold shadow-lg shadow-blue-900/20 hover:bg-blue-800 transition-all transform hover:-translate-y-1 text-center"
-             >
-                Download Resume PDF
-             </a>
           </div>
         </div>
       </div>
