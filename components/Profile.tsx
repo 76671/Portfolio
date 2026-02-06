@@ -32,7 +32,7 @@ const Profile: React.FC<ProfileProps> = ({ setView }) => {
                 />
               </div>
               <h3 className="text-2xl font-bold text-slate-900">Vivek Saurav</h3>
-              <p className="text-blue-600 font-semibold text-sm mb-6">Data Analyst & SQL Developer</p>
+              <p className="text-blue-600 font-semibold text-sm mb-6">Data Analyst Fresher</p>
               <p className="text-slate-600 text-sm leading-relaxed mb-8">
                 Computer Science graduate (2024) focused on transforming complex data into clear, actionable business insights.
               </p>
